@@ -198,6 +198,7 @@ body {
   transform: rotate(-40deg);
   z-index: -1;
   animation: topHat 4s 7s forwards ease;
+  opacity: 0;
 }
 @keyframes topHat {
   20%,
@@ -205,11 +206,13 @@ body {
     top: -30px;
     transform-origin: left;
     transform: rotate(-40deg);
+    opacity: 1;
   }
   35%,
   100% {
     top: -30px;
     transform: rotate(0deg);
+    opacity: 1;
   }
 }
 .date__of__birth,
